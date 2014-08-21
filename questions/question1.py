@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 """
 Question 1
 
@@ -30,4 +31,15 @@ Fizz
 FizzBuzz
 """
 
+def main(input):
+    # my code here
+    for number in range(1,input+1):
+        buzz = "Buzz" if not number % 3 else ""
+        fizz = "Fizz" if not number % 5 else ""
+        result =  fizz+buzz if buzz or fizz else number
+        print result
 
+
+if __name__ == "__main__":
+    number = int(raw_input())
+    main(number)
